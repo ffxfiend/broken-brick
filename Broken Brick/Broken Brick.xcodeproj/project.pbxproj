@@ -111,6 +111,7 @@
 		A8DA2DAC179B241700A1183C /* Broken Brick */ = {
 			isa = PBXGroup;
 			children = (
+				A8DA2DE4179B2E8600A1183C /* BrokenBrick */,
 				A8DA2DC9179B246E00A1183C /* Resources */,
 				A8DA2DCA179B247500A1183C /* IgzCore */,
 				A8DA2DB8179B241700A1183C /* lotasAppDelegate.h */,
@@ -155,6 +156,13 @@
 				A8DA2DD6179B251800A1183C /* IgzTextureObject.m */,
 			);
 			name = IgzCore;
+			sourceTree = "<group>";
+		};
+		A8DA2DE4179B2E8600A1183C /* BrokenBrick */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = BrokenBrick;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
