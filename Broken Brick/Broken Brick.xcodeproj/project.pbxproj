@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8DA2DA7179B241700A1183C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8DA2DA6179B241700A1183C /* Cocoa.framework */; };
+		A8DA2DB1179B241700A1183C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8DA2DAF179B241700A1183C /* InfoPlist.strings */; };
+		A8DA2DB3179B241700A1183C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA2DB2179B241700A1183C /* main.m */; };
+		A8DA2DB7179B241700A1183C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A8DA2DB5179B241700A1183C /* Credits.rtf */; };
+		A8DA2DBA179B241700A1183C /* lotasAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA2DB9179B241700A1183C /* lotasAppDelegate.m */; };
+		A8DA2DBD179B241800A1183C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8DA2DBB179B241800A1183C /* MainMenu.xib */; };
+		A8DA2DC4179B244600A1183C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8DA2DC3179B244600A1183C /* OpenGL.framework */; };
+		A8DA2DC6179B245A00A1183C /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8DA2DC5179B245A00A1183C /* GLUT.framework */; };
+		A8DA2DC8179B246100A1183C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8DA2DC7179B246100A1183C /* QuartzCore.framework */; };
+		A8DA2DCD179B24A900A1183C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A8DA2DCB179B24A900A1183C /* LICENSE */; };
+		A8DA2DCE179B24A900A1183C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A8DA2DCC179B24A900A1183C /* README.md */; };
+		A8DA2DD1179B24D900A1183C /* IgzCore.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA2DD0179B24D900A1183C /* IgzCore.m */; };
+		A8DA2DD4179B250200A1183C /* IgzTextureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA2DD3179B250200A1183C /* IgzTextureManager.m */; };
+		A8DA2DD7179B251800A1183C /* IgzTextureObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA2DD6179B251800A1183C /* IgzTextureObject.m */; };
+		A8DA2DD9179B26B400A1183C /* lightning.png in Resources */ = {isa = PBXBuildFile; fileRef = A8DA2DD8179B26B400A1183C /* lightning.png */; };
+		A8DA2DDD179B27F500A1183C /* ff13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8DA2DDC179B27F500A1183C /* ff13.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A8DA2DA3179B241700A1183C /* Broken Brick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Broken Brick.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8DA2DA6179B241700A1183C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A8DA2DA9179B241700A1183C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A8DA2DAA179B241700A1183C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A8DA2DAB179B241700A1183C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A8DA2DAE179B241700A1183C /* Broken Brick-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Broken Brick-Info.plist"; sourceTree = "<group>"; };
+		A8DA2DB0179B241700A1183C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A8DA2DB2179B241700A1183C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A8DA2DB4179B241700A1183C /* Broken Brick-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Broken Brick-Prefix.pch"; sourceTree = "<group>"; };
+		A8DA2DB6179B241700A1183C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		A8DA2DB8179B241700A1183C /* lotasAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lotasAppDelegate.h; sourceTree = "<group>"; };
+		A8DA2DB9179B241700A1183C /* lotasAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lotasAppDelegate.m; sourceTree = "<group>"; };
+		A8DA2DBC179B241800A1183C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A8DA2DC3179B244600A1183C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		A8DA2DC5179B245A00A1183C /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		A8DA2DC7179B246100A1183C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A8DA2DCB179B24A900A1183C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
+		A8DA2DCC179B24A900A1183C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		A8DA2DCF179B24D900A1183C /* IgzCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IgzCore.h; sourceTree = "<group>"; };
+		A8DA2DD0179B24D900A1183C /* IgzCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IgzCore.m; sourceTree = "<group>"; };
+		A8DA2DD2179B250200A1183C /* IgzTextureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IgzTextureManager.h; sourceTree = "<group>"; };
+		A8DA2DD3179B250200A1183C /* IgzTextureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IgzTextureManager.m; sourceTree = "<group>"; };
+		A8DA2DD5179B251800A1183C /* IgzTextureObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IgzTextureObject.h; sourceTree = "<group>"; };
+		A8DA2DD6179B251800A1183C /* IgzTextureObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IgzTextureObject.m; sourceTree = "<group>"; };
+		A8DA2DD8179B26B400A1183C /* lightning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightning.png; sourceTree = "<group>"; };
+		A8DA2DDC179B27F500A1183C /* ff13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ff13.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8DA2DA0179B241700A1183C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8DA2DC8179B246100A1183C /* QuartzCore.framework in Frameworks */,
+				A8DA2DC6179B245A00A1183C /* GLUT.framework in Frameworks */,
+				A8DA2DC4179B244600A1183C /* OpenGL.framework in Frameworks */,
+				A8DA2DA7179B241700A1183C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8DA2D9A179B241700A1183C = {
+			isa = PBXGroup;
+			children = (
+				A8DA2DAC179B241700A1183C /* Broken Brick */,
+				A8DA2DA5179B241700A1183C /* Frameworks */,
+				A8DA2DA4179B241700A1183C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8DA2DA4179B241700A1183C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8DA2DA3179B241700A1183C /* Broken Brick.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8DA2DA5179B241700A1183C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8DA2DC7179B246100A1183C /* QuartzCore.framework */,
+				A8DA2DC5179B245A00A1183C /* GLUT.framework */,
+				A8DA2DC3179B244600A1183C /* OpenGL.framework */,
+				A8DA2DA6179B241700A1183C /* Cocoa.framework */,
+				A8DA2DA8179B241700A1183C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8DA2DA8179B241700A1183C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8DA2DA9179B241700A1183C /* AppKit.framework */,
+				A8DA2DAA179B241700A1183C /* CoreData.framework */,
+				A8DA2DAB179B241700A1183C /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A8DA2DAC179B241700A1183C /* Broken Brick */ = {
+			isa = PBXGroup;
+			children = (
+				A8DA2DC9179B246E00A1183C /* Resources */,
+				A8DA2DCA179B247500A1183C /* IgzCore */,
+				A8DA2DB8179B241700A1183C /* lotasAppDelegate.h */,
+				A8DA2DB9179B241700A1183C /* lotasAppDelegate.m */,
+				A8DA2DBB179B241800A1183C /* MainMenu.xib */,
+				A8DA2DAD179B241700A1183C /* Supporting Files */,
+			);
+			path = "Broken Brick";
+			sourceTree = "<group>";
+		};
+		A8DA2DAD179B241700A1183C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8DA2DAE179B241700A1183C /* Broken Brick-Info.plist */,
+				A8DA2DAF179B241700A1183C /* InfoPlist.strings */,
+				A8DA2DCB179B24A900A1183C /* LICENSE */,
+				A8DA2DCC179B24A900A1183C /* README.md */,
+				A8DA2DB2179B241700A1183C /* main.m */,
+				A8DA2DB4179B241700A1183C /* Broken Brick-Prefix.pch */,
+				A8DA2DB5179B241700A1183C /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8DA2DC9179B246E00A1183C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8DA2DDC179B27F500A1183C /* ff13.jpg */,
+				A8DA2DD8179B26B400A1183C /* lightning.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A8DA2DCA179B247500A1183C /* IgzCore */ = {
+			isa = PBXGroup;
+			children = (
+				A8DA2DCF179B24D900A1183C /* IgzCore.h */,
+				A8DA2DD0179B24D900A1183C /* IgzCore.m */,
+				A8DA2DD2179B250200A1183C /* IgzTextureManager.h */,
+				A8DA2DD3179B250200A1183C /* IgzTextureManager.m */,
+				A8DA2DD5179B251800A1183C /* IgzTextureObject.h */,
+				A8DA2DD6179B251800A1183C /* IgzTextureObject.m */,
+			);
+			name = IgzCore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8DA2DA2179B241700A1183C /* Broken Brick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8DA2DC0179B241800A1183C /* Build configuration list for PBXNativeTarget "Broken Brick" */;
+			buildPhases = (
+				A8DA2D9F179B241700A1183C /* Sources */,
+				A8DA2DA0179B241700A1183C /* Frameworks */,
+				A8DA2DA1179B241700A1183C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Broken Brick";
+			productName = "Broken Brick";
+			productReference = A8DA2DA3179B241700A1183C /* Broken Brick.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8DA2D9B179B241700A1183C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = lotas;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Jeremiah Poisson";
+			};
+			buildConfigurationList = A8DA2D9E179B241700A1183C /* Build configuration list for PBXProject "Broken Brick" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A8DA2D9A179B241700A1183C;
+			productRefGroup = A8DA2DA4179B241700A1183C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8DA2DA2179B241700A1183C /* Broken Brick */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8DA2DA1179B241700A1183C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8DA2DB1179B241700A1183C /* InfoPlist.strings in Resources */,
+				A8DA2DB7179B241700A1183C /* Credits.rtf in Resources */,
+				A8DA2DBD179B241800A1183C /* MainMenu.xib in Resources */,
+				A8DA2DCD179B24A900A1183C /* LICENSE in Resources */,
+				A8DA2DCE179B24A900A1183C /* README.md in Resources */,
+				A8DA2DD9179B26B400A1183C /* lightning.png in Resources */,
+				A8DA2DDD179B27F500A1183C /* ff13.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8DA2D9F179B241700A1183C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8DA2DB3179B241700A1183C /* main.m in Sources */,
+				A8DA2DBA179B241700A1183C /* lotasAppDelegate.m in Sources */,
+				A8DA2DD1179B24D900A1183C /* IgzCore.m in Sources */,
+				A8DA2DD4179B250200A1183C /* IgzTextureManager.m in Sources */,
+				A8DA2DD7179B251800A1183C /* IgzTextureObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A8DA2DAF179B241700A1183C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8DA2DB0179B241700A1183C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A8DA2DB5179B241700A1183C /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8DA2DB6179B241700A1183C /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		A8DA2DBB179B241800A1183C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8DA2DBC179B241800A1183C /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8DA2DBE179B241800A1183C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A8DA2DBF179B241800A1183C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A8DA2DC1179B241800A1183C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Broken Brick/Broken Brick-Prefix.pch";
+				INFOPLIST_FILE = "Broken Brick/Broken Brick-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A8DA2DC2179B241800A1183C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Broken Brick/Broken Brick-Prefix.pch";
+				INFOPLIST_FILE = "Broken Brick/Broken Brick-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8DA2D9E179B241700A1183C /* Build configuration list for PBXProject "Broken Brick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8DA2DBE179B241800A1183C /* Debug */,
+				A8DA2DBF179B241800A1183C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8DA2DC0179B241800A1183C /* Build configuration list for PBXNativeTarget "Broken Brick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8DA2DC1179B241800A1183C /* Debug */,
+				A8DA2DC2179B241800A1183C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8DA2D9B179B241700A1183C /* Project object */;
+}

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Broken Brick' target in the 'Broken Brick' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
