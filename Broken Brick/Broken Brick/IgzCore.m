@@ -43,8 +43,6 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef dispalyLink, const CVTime
 
 @implementation IgzCore
 
-@synthesize rtri;
-@synthesize rquad;
 @synthesize dt;
 @synthesize prevFrameTime;
 @synthesize timeLeftOverForUpdate;
@@ -122,8 +120,6 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef dispalyLink, const CVTime
         [[IgzTextureManager sharedManager] loadTexture:@"lightning.png"];
         
         CVDisplayLinkStart(displayLink);
-        
-        [self setRtri:0.0];
         
     }
     return self;
@@ -219,14 +215,7 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef dispalyLink, const CVTime
 }
 
 - (void) update {
-    
-    /* float rotate = [self rtri];
-     rotate += 0.2;
-     [self setRtri:rotate]; */
-    
-    rtri += 0.2;
-    rquad -= 0.15f;
-    
+        
 }
 
 - (void) drawRect:(NSRect)rect {
@@ -239,11 +228,6 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef dispalyLink, const CVTime
     
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glLoadIdentity();
-    
-    // glTranslatef(-1.5f,0.0f,-6.0f);
-    
-    // glRotatef(rtri,0.0f,1.0f,0.0f);
-    
     
     // Get the texture
     IgzTextureObject *txt = [[IgzTextureManager sharedManager] getTexture:@"ff13.jpg"];
@@ -283,111 +267,6 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef dispalyLink, const CVTime
         glVertex2d(400, 300);
     }
     glEnd();
-    
-    /* int loop1 = 0;
-     for (loop1=0; loop1<3-1; loop1++)                    // Loop Through Lives Minus Current Life
-     {
-     glLoadIdentity();                       // Reset The View
-     glTranslatef(490+(loop1*40.0f),40.0f,0.0f);
-     glColor3f(0.0f,1.0f,0.0f);                  // Set Player Color To Light Green
-     glBegin(GL_LINES);                      // Start Drawing Our Player Using Lines
-     glVertex2d(-5,-5);                  // Top Left Of Player
-     glVertex2d( 5, 5);                  // Bottom Right Of Player
-     glVertex2d( 5,-5);                  // Top Right Of Player
-     glVertex2d(-5, 5);                  // Bottom Left Of Player
-     glEnd();                            // Done Drawing The Player
-     
-     glColor3f(0.0f,0.75f,0.0f);                 // Set Player Color To Dark Green
-     glBegin(GL_LINES);                      // Start Drawing Our Player Using Lines
-     glVertex2d(-7, 0);                  // Left Center Of Player
-     glVertex2d( 7, 0);                  // Right Center Of Player
-     glVertex2d( 0,-7);                  // Top Center Of Player
-     glVertex2d( 0, 7);                  // Bottom Center Of Player
-     glEnd();
-     } */
-    
-    
-    // Draw a triangle
-    // glColor3f(1.0f, 0.85f, 0.35f);
-    /* glBegin(GL_TRIANGLES);
-     {
-     
-     glColor3f(1.0f,0.0f,0.0f);          // Red
-     glVertex3f( 0.0f, 1.0f, 0.0f);          // Top Of Triangle (Front)
-     glColor3f(0.0f,1.0f,0.0f);          // Green
-     glVertex3f(-1.0f,-1.0f, 1.0f);          // Left Of Triangle (Front)
-     glColor3f(0.0f,0.0f,1.0f);          // Blue
-     glVertex3f( 1.0f,-1.0f, 1.0f);
-     
-     glColor3f(1.0f,0.0f,0.0f);          // Red
-     glVertex3f( 0.0f, 1.0f, 0.0f);          // Top Of Triangle (Right)
-     glColor3f(0.0f,0.0f,1.0f);          // Blue
-     glVertex3f( 1.0f,-1.0f, 1.0f);          // Left Of Triangle (Right)
-     glColor3f(0.0f,1.0f,0.0f);          // Green
-     glVertex3f( 1.0f,-1.0f, -1.0f);
-     
-     glColor3f(1.0f,0.0f,0.0f);          // Red
-     glVertex3f( 0.0f, 1.0f, 0.0f);          // Top Of Triangle (Back)
-     glColor3f(0.0f,1.0f,0.0f);          // Green
-     glVertex3f( 1.0f,-1.0f, -1.0f);         // Left Of Triangle (Back)
-     glColor3f(0.0f,0.0f,1.0f);          // Blue
-     glVertex3f(-1.0f,-1.0f, -1.0f);
-     
-     glColor3f(1.0f,0.0f,0.0f);          // Red
-     glVertex3f( 0.0f, 1.0f, 0.0f);          // Top Of Triangle (Left)
-     glColor3f(0.0f,0.0f,1.0f);          // Blue
-     glVertex3f(-1.0f,-1.0f,-1.0f);          // Left Of Triangle (Left)
-     glColor3f(0.0f,1.0f,0.0f);          // Green
-     glVertex3f(-1.0f,-1.0f, 1.0f);
-     
-     }
-     glEnd();
-     // ---------------
-     
-     glLoadIdentity();                   // Reset The Current Modelview Matrix
-     glTranslatef(1.5f,0.0f,-6.0f);              // Move Right 1.5 Units And Into The Screen 6.0
-     glRotatef(rquad,1.0f,0.0f,0.0f);
-     
-     glBegin(GL_QUADS);
-     {
-     glColor3f(0.0f,1.0f,0.0f);          // Set The Color To Green
-     glVertex3f( 1.0f, 1.0f,-1.0f);          // Top Right Of The Quad (Top)
-     glVertex3f(-1.0f, 1.0f,-1.0f);          // Top Left Of The Quad (Top)
-     glVertex3f(-1.0f, 1.0f, 1.0f);          // Bottom Left Of The Quad (Top)
-     glVertex3f( 1.0f, 1.0f, 1.0f);
-     
-     glColor3f(1.0f,0.5f,0.0f);          // Set The Color To Orange
-     glVertex3f( 1.0f,-1.0f, 1.0f);          // Top Right Of The Quad (Bottom)
-     glVertex3f(-1.0f,-1.0f, 1.0f);          // Top Left Of The Quad (Bottom)
-     glVertex3f(-1.0f,-1.0f,-1.0f);          // Bottom Left Of The Quad (Bottom)
-     glVertex3f( 1.0f,-1.0f,-1.0f);
-     
-     glColor3f(1.0f,0.0f,0.0f);          // Set The Color To Red
-     glVertex3f( 1.0f, 1.0f, 1.0f);          // Top Right Of The Quad (Front)
-     glVertex3f(-1.0f, 1.0f, 1.0f);          // Top Left Of The Quad (Front)
-     glVertex3f(-1.0f,-1.0f, 1.0f);          // Bottom Left Of The Quad (Front)
-     glVertex3f( 1.0f,-1.0f, 1.0f);
-     
-     glColor3f(1.0f,1.0f,0.0f);          // Set The Color To Yellow
-     glVertex3f( 1.0f,-1.0f,-1.0f);          // Bottom Left Of The Quad (Back)
-     glVertex3f(-1.0f,-1.0f,-1.0f);          // Bottom Right Of The Quad (Back)
-     glVertex3f(-1.0f, 1.0f,-1.0f);          // Top Right Of The Quad (Back)
-     glVertex3f( 1.0f, 1.0f,-1.0f);
-     
-     glColor3f(0.0f,0.0f,1.0f);          // Set The Color To Blue
-     glVertex3f(-1.0f, 1.0f, 1.0f);          // Top Right Of The Quad (Left)
-     glVertex3f(-1.0f, 1.0f,-1.0f);          // Top Left Of The Quad (Left)
-     glVertex3f(-1.0f,-1.0f,-1.0f);          // Bottom Left Of The Quad (Left)
-     glVertex3f(-1.0f,-1.0f, 1.0f);
-     
-     glColor3f(1.0f,0.0f,1.0f);          // Set The Color To Violet
-     glVertex3f( 1.0f, 1.0f,-1.0f);          // Top Right Of The Quad (Right)
-     glVertex3f( 1.0f, 1.0f, 1.0f);          // Top Left Of The Quad (Right)
-     glVertex3f( 1.0f,-1.0f, 1.0f);          // Bottom Left Of The Quad (Right)
-     glVertex3f( 1.0f,-1.0f,-1.0f);
-     
-     }
-     glEnd(); */
     
     glFlush();
     

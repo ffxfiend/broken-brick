@@ -50,9 +50,6 @@
 // Texture functions
 - (BOOL) loadTextures:(NSString *)imageName;
 
-@property (readwrite) float rtri;
-@property (readwrite) float rquad;
-
 @property (readwrite) double dt;
 @property (readwrite) double prevFrameTime;
 @property (readwrite) double timeLeftOverForUpdate;
