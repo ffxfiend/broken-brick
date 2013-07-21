@@ -23,6 +23,14 @@
 		A8DA2DD7179B251800A1183C /* IgzTextureObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA2DD6179B251800A1183C /* IgzTextureObject.m */; };
 		A8DA2DD9179B26B400A1183C /* lightning.png in Resources */ = {isa = PBXBuildFile; fileRef = A8DA2DD8179B26B400A1183C /* lightning.png */; };
 		A8DA2DDD179B27F500A1183C /* ff13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8DA2DDC179B27F500A1183C /* ff13.jpg */; };
+		A8DA2DE7179B2EFF00A1183C /* BrokenBrick.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA2DE6179B2EFF00A1183C /* BrokenBrick.m */; };
+		A8DA2DEB179B2FAB00A1183C /* BBBall.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA2DEA179B2FAB00A1183C /* BBBall.m */; };
+		A8DA2DEE179B2FB800A1183C /* BBBrick.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA2DED179B2FB800A1183C /* BBBrick.m */; };
+		A8DA2DF1179B301700A1183C /* IgzSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA2DF0179B301700A1183C /* IgzSprite.m */; };
+		A8DA2DF5179B311000A1183C /* IgzComponentPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA2DF4179B311000A1183C /* IgzComponentPosition.m */; };
+		A8DA2DF8179B5FD700A1183C /* IgzComponentVelocity.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA2DF7179B5FD700A1183C /* IgzComponentVelocity.m */; };
+		A8DA2DFB179B604B00A1183C /* IgzComponentTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA2DFA179B604B00A1183C /* IgzComponentTexture.m */; };
+		A8DA2DFE179B60C000A1183C /* IgzComponentBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA2DFD179B60C000A1183C /* IgzComponentBase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +60,22 @@
 		A8DA2DD6179B251800A1183C /* IgzTextureObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IgzTextureObject.m; sourceTree = "<group>"; };
 		A8DA2DD8179B26B400A1183C /* lightning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightning.png; sourceTree = "<group>"; };
 		A8DA2DDC179B27F500A1183C /* ff13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ff13.jpg; sourceTree = "<group>"; };
+		A8DA2DE5179B2EFF00A1183C /* BrokenBrick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrokenBrick.h; sourceTree = "<group>"; };
+		A8DA2DE6179B2EFF00A1183C /* BrokenBrick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrokenBrick.m; sourceTree = "<group>"; };
+		A8DA2DE9179B2FAB00A1183C /* BBBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBBall.h; sourceTree = "<group>"; };
+		A8DA2DEA179B2FAB00A1183C /* BBBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBBall.m; sourceTree = "<group>"; };
+		A8DA2DEC179B2FB800A1183C /* BBBrick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBBrick.h; sourceTree = "<group>"; };
+		A8DA2DED179B2FB800A1183C /* BBBrick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBBrick.m; sourceTree = "<group>"; };
+		A8DA2DEF179B301700A1183C /* IgzSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IgzSprite.h; sourceTree = "<group>"; };
+		A8DA2DF0179B301700A1183C /* IgzSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IgzSprite.m; sourceTree = "<group>"; };
+		A8DA2DF3179B311000A1183C /* IgzComponentPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IgzComponentPosition.h; sourceTree = "<group>"; };
+		A8DA2DF4179B311000A1183C /* IgzComponentPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IgzComponentPosition.m; sourceTree = "<group>"; };
+		A8DA2DF6179B5FD700A1183C /* IgzComponentVelocity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IgzComponentVelocity.h; sourceTree = "<group>"; };
+		A8DA2DF7179B5FD700A1183C /* IgzComponentVelocity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IgzComponentVelocity.m; sourceTree = "<group>"; };
+		A8DA2DF9179B604B00A1183C /* IgzComponentTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IgzComponentTexture.h; sourceTree = "<group>"; };
+		A8DA2DFA179B604B00A1183C /* IgzComponentTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IgzComponentTexture.m; sourceTree = "<group>"; };
+		A8DA2DFC179B60C000A1183C /* IgzComponentBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IgzComponentBase.h; sourceTree = "<group>"; };
+		A8DA2DFD179B60C000A1183C /* IgzComponentBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IgzComponentBase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,12 +172,15 @@
 		A8DA2DCA179B247500A1183C /* IgzCore */ = {
 			isa = PBXGroup;
 			children = (
+				A8DA2DF2179B30EB00A1183C /* Components */,
 				A8DA2DCF179B24D900A1183C /* IgzCore.h */,
 				A8DA2DD0179B24D900A1183C /* IgzCore.m */,
 				A8DA2DD2179B250200A1183C /* IgzTextureManager.h */,
 				A8DA2DD3179B250200A1183C /* IgzTextureManager.m */,
 				A8DA2DD5179B251800A1183C /* IgzTextureObject.h */,
 				A8DA2DD6179B251800A1183C /* IgzTextureObject.m */,
+				A8DA2DEF179B301700A1183C /* IgzSprite.h */,
+				A8DA2DF0179B301700A1183C /* IgzSprite.m */,
 			);
 			name = IgzCore;
 			sourceTree = "<group>";
@@ -161,8 +188,37 @@
 		A8DA2DE4179B2E8600A1183C /* BrokenBrick */ = {
 			isa = PBXGroup;
 			children = (
+				A8DA2DE8179B2F9300A1183C /* Objects */,
+				A8DA2DE5179B2EFF00A1183C /* BrokenBrick.h */,
+				A8DA2DE6179B2EFF00A1183C /* BrokenBrick.m */,
 			);
 			name = BrokenBrick;
+			sourceTree = "<group>";
+		};
+		A8DA2DE8179B2F9300A1183C /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				A8DA2DE9179B2FAB00A1183C /* BBBall.h */,
+				A8DA2DEA179B2FAB00A1183C /* BBBall.m */,
+				A8DA2DEC179B2FB800A1183C /* BBBrick.h */,
+				A8DA2DED179B2FB800A1183C /* BBBrick.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		A8DA2DF2179B30EB00A1183C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A8DA2DF3179B311000A1183C /* IgzComponentPosition.h */,
+				A8DA2DF4179B311000A1183C /* IgzComponentPosition.m */,
+				A8DA2DF6179B5FD700A1183C /* IgzComponentVelocity.h */,
+				A8DA2DF7179B5FD700A1183C /* IgzComponentVelocity.m */,
+				A8DA2DF9179B604B00A1183C /* IgzComponentTexture.h */,
+				A8DA2DFA179B604B00A1183C /* IgzComponentTexture.m */,
+				A8DA2DFC179B60C000A1183C /* IgzComponentBase.h */,
+				A8DA2DFD179B60C000A1183C /* IgzComponentBase.m */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +295,14 @@
 				A8DA2DD1179B24D900A1183C /* IgzCore.m in Sources */,
 				A8DA2DD4179B250200A1183C /* IgzTextureManager.m in Sources */,
 				A8DA2DD7179B251800A1183C /* IgzTextureObject.m in Sources */,
+				A8DA2DE7179B2EFF00A1183C /* BrokenBrick.m in Sources */,
+				A8DA2DEB179B2FAB00A1183C /* BBBall.m in Sources */,
+				A8DA2DEE179B2FB800A1183C /* BBBrick.m in Sources */,
+				A8DA2DF1179B301700A1183C /* IgzSprite.m in Sources */,
+				A8DA2DF5179B311000A1183C /* IgzComponentPosition.m in Sources */,
+				A8DA2DF8179B5FD700A1183C /* IgzComponentVelocity.m in Sources */,
+				A8DA2DFB179B604B00A1183C /* IgzComponentTexture.m in Sources */,
+				A8DA2DFE179B60C000A1183C /* IgzComponentBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
