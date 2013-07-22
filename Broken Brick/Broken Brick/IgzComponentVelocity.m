@@ -7,6 +7,7 @@
 //
 
 #import "IgzComponentVelocity.h"
+#import "ComponentDefines.h"
 
 @implementation IgzComponentVelocity
 
@@ -15,7 +16,7 @@
 
 - (id) init {
     
-    self = [super initWith:@"Velocity"];
+    self = [super initWith:IGZ_COMPONENT_VELOCITY];
     if (self != nil) {
         [self setX:0.0];
         [self setY:0.0];

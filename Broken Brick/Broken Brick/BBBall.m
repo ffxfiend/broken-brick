@@ -7,6 +7,7 @@
 //
 
 #import "BBBall.h"
+#import "ComponentDefines.h"
 
 // Components
 #import "IgzComponentPosition.h"
@@ -22,10 +23,9 @@
         
         // Add the necessary components.
         components = [[NSMutableDictionary alloc] init];
-        [components setObject:[[IgzComponentPosition alloc] init] forKey:@"position"];
-        [components setObject:[[IgzComponentVelocity alloc] init] forKey:@"velocity"];
-        [components setObject:[[IgzComponentTexture alloc] init] forKey:@"texture"];
-        
+        [components setObject:[[IgzComponentPosition alloc] init] forKey:IGZ_COMPONENT_POSITION];
+        [components setObject:[[IgzComponentVelocity alloc] init] forKey:IGZ_COMPONENT_VELOCITY];
+        [components setObject:[[IgzComponentTexture alloc] init] forKey:IGZ_COMPONENT_TEXTURE];
         
     }
     return self;

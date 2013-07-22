@@ -7,6 +7,7 @@
 //
 
 #import "IgzComponentBase.h"
+#import "ComponentDefines.h"
 
 @implementation IgzComponentBase
 

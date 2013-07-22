@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A3AAA3A179D7F1800BC2748 /* IgzSystemMovement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AAA39179D7F1800BC2748 /* IgzSystemMovement.m */; };
 		A8DA2DA7179B241700A1183C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8DA2DA6179B241700A1183C /* Cocoa.framework */; };
 		A8DA2DB1179B241700A1183C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8DA2DAF179B241700A1183C /* InfoPlist.strings */; };
 		A8DA2DB3179B241700A1183C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA2DB2179B241700A1183C /* main.m */; };
@@ -34,6 +35,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A3AAA38179D7F1800BC2748 /* IgzSystemMovement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IgzSystemMovement.h; sourceTree = "<group>"; };
+		3A3AAA39179D7F1800BC2748 /* IgzSystemMovement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IgzSystemMovement.m; sourceTree = "<group>"; };
+		3A3AAA3B179D7FDA00BC2748 /* ComponentDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComponentDefines.h; sourceTree = "<group>"; };
 		A8DA2DA3179B241700A1183C /* Broken Brick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Broken Brick.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8DA2DA6179B241700A1183C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A8DA2DA9179B241700A1183C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -93,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A3AAA37179D7EFF00BC2748 /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				3A3AAA38179D7F1800BC2748 /* IgzSystemMovement.h */,
+				3A3AAA39179D7F1800BC2748 /* IgzSystemMovement.m */,
+			);
+			name = Systems;
+			sourceTree = "<group>";
+		};
 		A8DA2D9A179B241700A1183C = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +185,7 @@
 		A8DA2DCA179B247500A1183C /* IgzCore */ = {
 			isa = PBXGroup;
 			children = (
+				3A3AAA37179D7EFF00BC2748 /* Systems */,
 				A8DA2DF2179B30EB00A1183C /* Components */,
 				A8DA2DCF179B24D900A1183C /* IgzCore.h */,
 				A8DA2DD0179B24D900A1183C /* IgzCore.m */,
@@ -217,6 +231,7 @@
 				A8DA2DFA179B604B00A1183C /* IgzComponentTexture.m */,
 				A8DA2DFC179B60C000A1183C /* IgzComponentBase.h */,
 				A8DA2DFD179B60C000A1183C /* IgzComponentBase.m */,
+				3A3AAA3B179D7FDA00BC2748 /* ComponentDefines.h */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -303,6 +318,7 @@
 				A8DA2DF8179B5FD700A1183C /* IgzComponentVelocity.m in Sources */,
 				A8DA2DFB179B604B00A1183C /* IgzComponentTexture.m in Sources */,
 				A8DA2DFE179B60C000A1183C /* IgzComponentBase.m in Sources */,
+				3A3AAA3A179D7F1800BC2748 /* IgzSystemMovement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

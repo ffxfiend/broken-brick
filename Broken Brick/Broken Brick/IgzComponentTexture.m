@@ -8,6 +8,7 @@
 
 #import "IgzComponentTexture.h"
 #import "IgzTextureObject.h"
+#import "ComponentDefines.h"
 
 @implementation IgzComponentTexture
 
@@ -15,7 +16,7 @@
 
 - (id) init {
     
-    self = [super initWith:@"Texture"];
+    self = [super initWith:IGZ_COMPONENT_TEXTURE];
     if (self != nil) {
         
     }

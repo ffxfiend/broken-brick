@@ -7,6 +7,7 @@
 //
 
 #import "IgzComponentPosition.h"
+#import "ComponentDefines.h"
 
 @implementation IgzComponentPosition
 
@@ -15,7 +16,7 @@
 
 - (id) init {
     
-    self = [super initWith:@"Position"];
+    self = [super initWith:IGZ_COMPONENT_POSITION];
     if (self != nil) {
         [self setX:0.0];
         [self setY:0.0];
