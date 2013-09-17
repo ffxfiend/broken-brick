@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A3AAA3A179D7F1800BC2748 /* IgzSystemMovement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AAA39179D7F1800BC2748 /* IgzSystemMovement.m */; };
+		3AD9123917E7AB60000F8BD4 /* IgzComponentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9123817E7AB60000F8BD4 /* IgzComponentAnimation.m */; };
 		A8DA2DA7179B241700A1183C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8DA2DA6179B241700A1183C /* Cocoa.framework */; };
 		A8DA2DB1179B241700A1183C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8DA2DAF179B241700A1183C /* InfoPlist.strings */; };
 		A8DA2DB3179B241700A1183C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA2DB2179B241700A1183C /* main.m */; };
@@ -38,6 +39,8 @@
 		3A3AAA38179D7F1800BC2748 /* IgzSystemMovement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IgzSystemMovement.h; sourceTree = "<group>"; };
 		3A3AAA39179D7F1800BC2748 /* IgzSystemMovement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IgzSystemMovement.m; sourceTree = "<group>"; };
 		3A3AAA3B179D7FDA00BC2748 /* ComponentDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComponentDefines.h; sourceTree = "<group>"; };
+		3AD9123717E7AB60000F8BD4 /* IgzComponentAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IgzComponentAnimation.h; sourceTree = "<group>"; };
+		3AD9123817E7AB60000F8BD4 /* IgzComponentAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IgzComponentAnimation.m; sourceTree = "<group>"; };
 		A8DA2DA3179B241700A1183C /* Broken Brick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Broken Brick.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8DA2DA6179B241700A1183C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A8DA2DA9179B241700A1183C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -232,6 +235,8 @@
 				A8DA2DFC179B60C000A1183C /* IgzComponentBase.h */,
 				A8DA2DFD179B60C000A1183C /* IgzComponentBase.m */,
 				3A3AAA3B179D7FDA00BC2748 /* ComponentDefines.h */,
+				3AD9123717E7AB60000F8BD4 /* IgzComponentAnimation.h */,
+				3AD9123817E7AB60000F8BD4 /* IgzComponentAnimation.m */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -263,7 +268,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = lotas;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Jeremiah Poisson";
 			};
 			buildConfigurationList = A8DA2D9E179B241700A1183C /* Build configuration list for PBXProject "Broken Brick" */;
@@ -315,6 +320,7 @@
 				A8DA2DEE179B2FB800A1183C /* BBBrick.m in Sources */,
 				A8DA2DF1179B301700A1183C /* IgzSprite.m in Sources */,
 				A8DA2DF5179B311000A1183C /* IgzComponentPosition.m in Sources */,
+				3AD9123917E7AB60000F8BD4 /* IgzComponentAnimation.m in Sources */,
 				A8DA2DF8179B5FD700A1183C /* IgzComponentVelocity.m in Sources */,
 				A8DA2DFB179B604B00A1183C /* IgzComponentTexture.m in Sources */,
 				A8DA2DFE179B60C000A1183C /* IgzComponentBase.m in Sources */,
@@ -356,7 +362,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -389,7 +394,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;

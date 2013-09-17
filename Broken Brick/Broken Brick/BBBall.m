@@ -13,6 +13,7 @@
 #import "IgzComponentPosition.h"
 #import "IgzComponentVelocity.h"
 #import "IgzComponentTexture.h"
+#import "IgzComponentAnimation.h"
 
 @implementation BBBall
 
@@ -26,6 +27,7 @@
         [components setObject:[[IgzComponentPosition alloc] init] forKey:IGZ_COMPONENT_POSITION];
         [components setObject:[[IgzComponentVelocity alloc] init] forKey:IGZ_COMPONENT_VELOCITY];
         [components setObject:[[IgzComponentTexture alloc] init] forKey:IGZ_COMPONENT_TEXTURE];
+        [components setObject:[[IgzComponentAnimation alloc] init] forKey:IGZ_COMPONENT_ANIMATION];
         
     }
     return self;

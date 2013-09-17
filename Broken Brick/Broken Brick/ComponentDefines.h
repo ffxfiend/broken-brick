@@ -14,3 +14,4 @@
 #define IGZ_COMPONENT_POSITION  @"position"
 #define IGZ_COMPONENT_VELOCITY  @"velocity"
 #define IGZ_COMPONENT_TEXTURE   @"texture"
+#define IGZ_COMPONENT_ANIMATION @"animation"

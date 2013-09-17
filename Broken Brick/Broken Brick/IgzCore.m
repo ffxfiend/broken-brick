@@ -119,6 +119,8 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef dispalyLink, const CVTime
         [[IgzTextureManager sharedManager] loadTexture:@"ff13.jpg"];
         [[IgzTextureManager sharedManager] loadTexture:@"lightning.png"];
         
+        
+        
         CVDisplayLinkStart(displayLink);
         
     }

@@ -8,6 +8,10 @@
 
 #import "BrokenBrick.h"
 
+// Game Objects
+#import "BBBall.h"
+#import "BBBrick.h"
+
 @implementation BrokenBrick
 
 - (id) init {
@@ -16,6 +20,8 @@
     if (self != nil) {
         
         // Initialize the game
+        ball = [[BBBall alloc] init];
+        
         
     }
     return self;

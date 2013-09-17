@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BrokenBrick : NSObject
+@class BBBall;
+@class BBBrick;
+
+@interface BrokenBrick : NSObject {
+
+    // Game Objects
+    BBBall *ball;
+    BBBrick *brick;
+
+}
 
 @end
